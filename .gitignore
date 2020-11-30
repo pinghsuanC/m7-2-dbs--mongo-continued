@@ -1,6 +1,7 @@
 # Windows
 Thumbs.db
 desktop.ini
+.env
 
 # OS X
 .DS_Store
