@@ -56,9 +56,9 @@ const getSeats = async (req, res) => {
 // function to book a seat
 const bookSeat = async (req, res) => {
   // get variables
-  console.log(req.body);
+  //console.log(req.body);
   const { seatId, creditCard, expiration, fullName, email } = req.body;
-  console.log(seatId);
+  //console.log(seatId);
   if (!seatId || !creditCard || !expiration) {
     res
       .status(400)
@@ -253,7 +253,7 @@ const updateUser = async (req, res) => {
       .status(202)
       .json({ status: 202, data: req.body, message: "Successfully updated!" });
     return;
-    console.log(new_u);
+    //console.log(new_u);
   } catch (err) {
     console.log(err);
     res.status(400).json({
